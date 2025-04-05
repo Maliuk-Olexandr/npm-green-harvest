@@ -21,21 +21,589 @@
       referrerpolicy="no-referrer"
     />
     <script type="module" crossorigin src="/npm-green-harvest/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/npm-green-harvest/assets/index-CpX9s9hC.css">
+    <link rel="stylesheet" crossorigin href="/npm-green-harvest/assets/index-TJFCgSku.css">
   </head>
   <body>
-    
+    <header class="container header">
+  <div class="wrapper">
+    <a href="./index.html" aria-label="logo, link to home page">
+      <div class="logo-svg-container">
+        <svg class="logo-svg">
+          <use href="/npm-green-harvest/assets/icons-kelKj2ht.svg#icon-logo"></use>
+        </svg>
+        <svg class="logo-name">
+          <use href="/npm-green-harvest/assets/icons-kelKj2ht.svg#icon-name"></use>
+        </svg>
+      </div>
+    </a>
+    <div class="header-menu">
+      <nav class="menu">
+        <ul>
+          <li><a class="header-menu-link" href="#hero">How It Works</a></li>
+          <li><a class="header-menu-link" href="#vegetables">Vegetables</a></li>
+          <li><a class="header-menu-link" href="#rewiews">Reviews</a></li>
+        </ul>
+      </nav>
+      <a class="shop" href="#vegetables">Shop now</a>
+      <button
+        class="burger-btn"
+        type="button"
+        id="mobile-menu-open"
+        aria-label="mobile menu open"
+        data-menu-open
+      >
+        <svg class="burger-icon">
+          <use href="/npm-green-harvest/assets/icons-kelKj2ht.svg#icon-burger"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <!--Mobile menu-->
+  <div class="mobile-menu" data-menu>
+    <div class="mobile-menu-wrapper">
+      <div class="mobile-menu-header">
+        <button
+          class="close-btn"
+          type="button"
+          id="mobile-menu-close"
+          aria-label="mobile menu close"
+          data-menu-close
+        >
+          <svg class="icon-close">
+            <use href="/npm-green-harvest/assets/icons-kelKj2ht.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+      <nav>
+        <ul class="mobile-menu-list">
+          <li><a class="menu-link" href="#hero">How It Works</a></li>
+          <li><a class="menu-link" href="#vegetables">Vegetables</a></li>
+          <li><a class="menu-link" href="#reviews">Reviews</a></li>
+        </ul>
+      </nav>
+      <a class="shop-link" href="#vegetables">Shop now</a>
+    </div>
+  </div>
+</header>
+
 
     <main>
       <!-- Loads the specified .html file -->
-      
-      
-      
-      
-      
+      <section class="hero" id="hero">
+        <div class="container hero-wrapper">
+          <div class="hero-title-wrapper">
+            <h1 class="hero-title">organic vegetables to your diet today!</h1>
+            <p class="hero-desc">
+              Our expertly curated vegetable baskets are made with the freshest,
+              highest quality vegetables available. Fresh Harvest Box has got
+              you covered. Fresh, high-quality vegetables in expertly curated
+              vegetable baskets delivered to you.
+            </p>
+          </div>
+          <picture>
+            <source
+              srcset="/npm-green-harvest/assets/hero-desk-img-IzEjJJTj.webp, /npm-green-harvest/assets/hero-desk-img@2x-Dx-HCiML.webp 2x"
+              type="image/webp"
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="/npm-green-harvest/assets/hero-tablet-img-BfmNRIFe.webp, /npm-green-harvest/assets/hero-tablet-img@2x-CV-nHLXi.webp 2x"
+              type="image/webp"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="/npm-green-harvest/assets/hero-mob-img-Da5oMAIp.webp, /npm-green-harvest/assets/hero-mob-img@2x-C0xAeOlS.webp 2x"
+              type="image/webp"
+              media="(max-width: 767px)"
+            />
+            <img
+              alt="Fresh vegetables in a basket"
+              src="/npm-green-harvest/assets/hero-mob-img-Da5oMAIp.webp"
+            />
+          </picture>
+          <div class="how-it-works-wrapper">
+            <picture loading="lazy">
+              <source
+                srcset="/npm-green-harvest/assets/how-it-works-desk-img-BgM5aSyt.webp, /npm-green-harvest/assets/how-it-works-desk-img@2x-Bpwgroj2.webp 2x"
+                type="image/webp"
+                media="(min-width: 1280px)"
+              />
+              <source
+                srcset="/npm-green-harvest/assets/how-it-works-tab-img-Ck83NDhN.webp, /npm-green-harvest/assets/how-it-works-tab-img@2x-68MSfQtS.webp 2x"
+                type="image/webp"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="/npm-green-harvest/assets/how-it-works-mob-img-OdJqHFQC.webp, /npm-green-harvest/assets/how-it-works-mob-img@2x-Bqpx41S3.webp 2x"
+                type="image/webp"
+                media="(max-width: 767px)"
+              />
+              <img
+                loading="lazy"
+                class="how-it-works-img"
+                alt="woman cutting fruit"
+                src="/npm-green-harvest/assets/how-it-works-mob-img-OdJqHFQC.webp"
+              />
+            </picture>
+          </div>
+          <div class="how-it-works-desc">
+            <h2 class="how-it-works-title">
+              To order your
+              <a
+                href="#vegetables"
+                class="how-it-highlighted"
+                aria-label="choose your vegetable"
+                >vegetable</a
+              >
+              basket, simply follow these
+              <span class="how-it-highlighted">easy steps</span>
+            </h2>
+            <p class="how-it-works-text">
+              Our baskets are assembled with care and delivered straight to your
+              doorstep, so you can enjoy the taste of fresh fruit without ever
+              leaving your home.
+            </p>
+            <ol class="how-it-works-list">
+              <li class="how-it-works-list-item">
+                <div>
+                  Just choose
+                  <span class="how-item-highlighted">the vegetable</span> you
+                  want to order by clicking on the checkboxes
+                  <span class="how-item-highlighted">next to it</span>.
+                </div>
+              </li>
+              <li class="how-it-works-list-item">
+                <div>
+                  Click on
+                  <span class="how-item-highlighted">the basket</span> and fill
+                  out the form.
+                </div>
+              </li>
+              <li class="how-it-works-list-item">
+                <div>
+                  Sit back and relax! Your
+                  <span class="how-item-highlighted">fresh vegetables</span>
+                  basket will be delivered.
+                </div>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+           <section class="section" aria-label="discount">
+        <div class="container">
+          <h3 class="discont-title">
+            <span class="discont-highlighted">Discount up to 40%!</span>Taste
+            the vitamins and keep your health
+          </h3>
+        </div>
+      </section>
+      <section class="section vegetable" id="vegetables">
+        <div class="container">
+          <h2 class="vegetable-title">
+            organic <span class="how-it-highlighted">vegetables</span>
+          </h2>
+          <p class="vegetable-desc">
+            Our organic vegetables are hand-picked from local farms and
+            delivered straight to your doorstep, ensuring that you get the
+            freshest and most nutritious produce possible.
+          </p>
+          <ul class="vegetable-list">
+            <li class="vegetable-list-item">
+              <h3 class="product-title">eggplant</h3>
+              <p class="price">60 USD / kg</p>
+              <picture loading="lazy">
+                <source
+                  srcset="/npm-green-harvest/assets/vegetables-eggplant-pc-Dgy6kBwb.webp, /npm-green-harvest/assets/vegetables-eggplant-pc@2x-DEtip1PH.webp 2x"
+                  type="image/webp"
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="/npm-green-harvest/assets/vegetables-eggplant-tab-DUYN6QNf.webp, /npm-green-harvest/assets/vegetables-eggplant-tab@2x-D_vEDk6h.webp 2x"
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="/npm-green-harvest/assets/vegetables-eggplant-mob-D89lq7M6.webp, /npm-green-harvest/assets/vegetables-eggplant-mob@2x-CBygcE_u.webp 2x"
+                  type="image/webp"
+                  media="(max-width: 767px)"
+                />
+                <img
+                  loading="lazy"
+                  src="/npm-green-harvest/assets/vegetables-eggplant-mob-D89lq7M6.webp"
+                  alt="fresh eggplant"
+                />
+              </picture>
+            </li>
+            <li class="vegetable-list-item">
+              <h3 class="product-title">leek</h3>
+              <p class="price">50 USD / kg</p>
+              <picture loading="lazy">
+                <source
+                  srcset="/npm-green-harvest/assets/vegetables-leek-pc-BGsoVK46.webp, /npm-green-harvest/assets/vegetables-leek-pc@2x-D2icRuRP.webp 2x"
+                  type="image/webp"
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="/npm-green-harvest/assets/vegetables-leek-tab-Sn4AgXCZ.webp, /npm-green-harvest/assets/vegetables-leek-tab@2x-Bb4r_ukl.webp 2x"
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="data:image/webp;base64,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, /npm-green-harvest/assets/vegetables-leek-mob@2x-CT21vdDX.webp 2x"
+                  type="image/webp"
+                  media="(max-width: 767px)"
+                />
+                <img
+                  loading="lazy"
+                  src="data:image/webp;base64,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"
+                  alt="fresh leek"
+                />
+              </picture>
+            </li>
+            <li class="vegetable-list-item">
+              <h3 class="product-title">mushrooms</h3>
+              <p class="price">40 USD / kg</p>
+              <picture loading="lazy">
+                <source
+                  srcset="/npm-green-harvest/assets/vegetables-mushrooms-pc-DLMsSJdj.webp, /npm-green-harvest/assets/vegetables-mushrooms-pc@2x-BrSEb2f3.webp 2x"
+                  type="image/webp"
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="/npm-green-harvest/assets/vegetables-mushrooms-pc-DLMsSJdj.webp, /npm-green-harvest/assets/vegetables-mushrooms-pc@2x-BrSEb2f3.webp 2x"
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="/npm-green-harvest/assets/vegetables-mushrooms-tab-CXNLYTLs.webp, /npm-green-harvest/assets/vegetables-mushrooms-tab@2x-BQkvQiAO.webp 2x"
+                  type="image/webp"
+                  media="(max-width: 767px)"
+                />
+                <img
+                  loading="lazy"
+                  src="/npm-green-harvest/assets/vegetables-mushrooms-mob-Bv4N_3-q.webp"
+                  alt="fresh mushrooms"
+                />
+              </picture>
+            </li>
+            <li class="vegetable-list-item">
+              <h3 class="product-title">corn</h3>
+              <p class="price">60 USD / kg</p>
+              <picture loading="lazy">
+                <source
+                  srcset="/npm-green-harvest/assets/vegetables-corn-pc-Bgp9yvlS.webp, /npm-green-harvest/assets/vegetables-corn-pc@2x-VBj6_J0W.webp 2x"
+                  type="image/webp"
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="/npm-green-harvest/assets/vegetables-corn-tab-Bew1Et25.webp, /npm-green-harvest/assets/vegetables-corn-tab@2x-CUhpLUrW.webp 2x"
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="/npm-green-harvest/assets/vegetables-corn-mob-ZgdixoHG.webp, /npm-green-harvest/assets/vegetables-corn-mob@2x-C5uuapCH.webp 2x"
+                  type="image/webp"
+                  media="(max-width: 767px)"
+                />
+                <img
+                  loading="lazy"
+                  src="/npm-green-harvest/assets/vegetables-corn-mob-ZgdixoHG.webp"
+                  alt="fresh corn"
+                />
+              </picture>
+            </li>
+            <li class="vegetable-list-item">
+              <h3 class="product-title">sweet potatoes</h3>
+              <p class="price">50 USD / kg</p>
+              <picture loading="lazy">
+                <source
+                  srcset="/npm-green-harvest/assets/vegetables-sweet-potatoes-pc-CThj7Lhz.webp, /npm-green-harvest/assets/vegetables-sweet-potatoes-pc@2x-Ugy7sKP2.webp 2x"
+                  type="image/webp"
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="/npm-green-harvest/assets/vegetables-sweet-potatoes-tab-DKPxO8_v.webp, /npm-green-harvest/assets/vegetables-sweet-potatoes-tab@2x-CPBGLloM.webp 2x"
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="/npm-green-harvest/assets/vegetables-sweet-potatoes-mob-CXzIMPqI.webp, /npm-green-harvest/assets/vegetables-sweet-potatoes-mob@2x-DEZwPrUl.webp 2x"
+                  type="image/webp"
+                  media="(max-width: 767px)"
+                />
+                <img
+                  loading="lazy"
+                  src="/npm-green-harvest/assets/vegetables-sweet-potatoes-mob-CXzIMPqI.webp"
+                  alt="fresh sweet potatoes"
+                />
+              </picture>
+            </li>
+            <li class="vegetable-list-item">
+              <h3 class="product-title">carrot</h3>
+              <p class="price">40 USD / kg</p>
+              <picture loading="lazy">
+                <source
+                  srcset="/npm-green-harvest/assets/vegetables-carrot-pc-D7D6LHFr.webp, /npm-green-harvest/assets/vegetables-carrot-pc@2x-BnryVdZe.webp 2x"
+                  type="image/webp"
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="/npm-green-harvest/assets/vegetables-carrot-tab-D7TkIP1E.webp, /npm-green-harvest/assets/vegetables-carrot-tab@2x-BdTcoZOD.webp 2x"
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="/npm-green-harvest/assets/vegetables-carrot-mob-GjBTYfUM.webp, /npm-green-harvest/assets/vegetables-carrot-mob@2x-DjvK6AcE.webp 2x"
+                  type="image/webp"
+                  media="(max-width: 767px)"
+                />
+                <img
+                  loading="lazy"
+                  src="/npm-green-harvest/assets/vegetables-carrot-mob-GjBTYfUM.webp"
+                  alt="fresh carrot"
+                />
+              </picture>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section reviews" id="reviews">
+        <div class="container reviews-wrapper">
+          <h2 class="reviews-title">
+            reviews from our <span class="reviews-h2-span">customers</span>
+          </h2>
+          <p class="reviews-desc">
+            Words of our customers: impressions and opinions about the quality
+            of our services and the freshness of our products.
+          </p>
+          <input name="slider" id="slide1" type="radio" checked />
+          <input name="slider" id="slide2" type="radio" />
+          <input name="slider" id="slide3" type="radio" />
+          <ul class="reviews-list">
+            <li class="reviews-list-item">
+              <img
+                width="56"
+                height="56"
+                loading="lazy"
+                src="data:image/webp;base64,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"
+                alt="photo John Wax"
+                srcset="data:image/webp;base64,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, data:image/webp;base64,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 2x"
+              />
+              <h3 class="user-name">John Wax</h3>
+              <p class="user-rewiew">
+                These vegetables are my secret to delicious and healthy meals.
+                The quality is always at the highest level, the aroma and taste
+                are enchanting. I advise every fan of real products!
+              </p>
+            </li>
+            <li class="reviews-list-item">
+              <img
+                width="56"
+                height="56"
+                loading="lazy"
+                src="data:image/webp;base64,UklGRuIDAABXRUJQVlA4WAoAAAAQAAAANwAANwAAQUxQSBEBAAABgFXbjhXpSoiESMHB4AAcgANw0O2AdsA4QAISroRIyAevqmQevxExASgqzbDsdHfntg4Ngkq7mT+0tQsgk3lRLlpHJvPyk1Zo6VXZlZKXV39JEd09ILWA0kNSHyk9KPWB0sNSbwk98C53Xh76daP34O2FMprJ2eTh5xP1+CaHTwKfD8xgAvSe8gtYc2yA5TBpPGkzZhnXLMuWZWcW+r+XWbhn2T5ZvscsY5OlEcthwJbjG2hzdIBYBgLAnGE5iCXQA+Z4M07FolHP0EbrcP2O9cZN2SNR7kAZh4r7yihUPFXGoOK5MsKuKCnvem9B4Z51rEV5nSvYLKiqH5axWVC/X+2Jba0gaDOsGw/cl6ERFAUAVlA4IKoCAACQDQCdASo4ADgAPok0lUelIqIhMBn++KARCWUAzF9vKRWLV0wJV3NC8bL6H0Vf2AV3i6Vk0QSnM5A4z5nCYHU2dehfEM6d4pP81Uqe4LFocD0w3zOU2lqEgt9MXCTP8J+RiKZpJjt9w+/9kZurHa4jGckRwUAA/v8a3f+yCvv/r+DesT/LSUSQbElClMUnrDfKVIbAFMePp9GaMjd38T05oApvZaF7o+rntE8zaz/VbCPBXGdu0DpY9Hsr+IgfqeifZMIgODjoVCrRnyNnskgetV7DIdx/aAQd2CUslWbSSLdQm1ZjLG8FoSDvBSuFm3YrZRE7JN30XNUUm5Mcm7kyskG8Jz5u3sB4sp///FZ4vi0QG9qysYQMyd8+Z9jn2OJH0yA/loQuQHFNvyPH2pS89vVCjshuiAcV20GH/jkXlAfH9v+rVwyKSTOO49cujonAPUJN/VaTYzMCO9zaoQsehMZOYWc4uO1ZtK3xh29GNcnV+9cWXo4k1J5wsfu+rKgNkc2ujGjnmuxLEfrPYGLg0OJ0nMHlOmrX90/suWy154DyrqjQfY6d9mFsx3ghB/Rfih9HFQPxOvwj+k0sV3KZbsMa0LrPNRu5JjKZ356xR8ValtR9Z64BamKp2WgEvUissnqc+FegmB9izyCkR43z7JQtNMyUTSbHL2g8N9aUrL5MqKo2fxhM/b2hzqkr2hBGZDRnzRht6PYB7sOcgJypMu24+yOaFgYc+yc/6Li+09ZdS6r5s8ez909Dm4yCa0+7bowaic8ggeKc79Vnh4a6ubTUVoeIVi1AWqFr8UQe37jdhS7qjPSP+69eFsdmYzNAFZ7tD2m6bCiSpK+saLZ2iBrY5S3IJaQdDn9YHKfuuMlgMkXDyNSwyM80Z9v4WQINghmV4aDegwAA"
+                alt="photo Victoria Romashenko"
+                srcset="data:image/webp;base64,UklGRuIDAABXRUJQVlA4WAoAAAAQAAAANwAANwAAQUxQSBEBAAABgFXbjhXpSoiESMHB4AAcgANw0O2AdsA4QAISroRIyAevqmQevxExASgqzbDsdHfntg4Ngkq7mT+0tQsgk3lRLlpHJvPyk1Zo6VXZlZKXV39JEd09ILWA0kNSHyk9KPWB0sNSbwk98C53Xh76daP34O2FMprJ2eTh5xP1+CaHTwKfD8xgAvSe8gtYc2yA5TBpPGkzZhnXLMuWZWcW+r+XWbhn2T5ZvscsY5OlEcthwJbjG2hzdIBYBgLAnGE5iCXQA+Z4M07FolHP0EbrcP2O9cZN2SNR7kAZh4r7yihUPFXGoOK5MsKuKCnvem9B4Z51rEV5nSvYLKiqH5axWVC/X+2Jba0gaDOsGw/cl6ERFAUAVlA4IKoCAACQDQCdASo4ADgAPok0lUelIqIhMBn++KARCWUAzF9vKRWLV0wJV3NC8bL6H0Vf2AV3i6Vk0QSnM5A4z5nCYHU2dehfEM6d4pP81Uqe4LFocD0w3zOU2lqEgt9MXCTP8J+RiKZpJjt9w+/9kZurHa4jGckRwUAA/v8a3f+yCvv/r+DesT/LSUSQbElClMUnrDfKVIbAFMePp9GaMjd38T05oApvZaF7o+rntE8zaz/VbCPBXGdu0DpY9Hsr+IgfqeifZMIgODjoVCrRnyNnskgetV7DIdx/aAQd2CUslWbSSLdQm1ZjLG8FoSDvBSuFm3YrZRE7JN30XNUUm5Mcm7kyskG8Jz5u3sB4sp///FZ4vi0QG9qysYQMyd8+Z9jn2OJH0yA/loQuQHFNvyPH2pS89vVCjshuiAcV20GH/jkXlAfH9v+rVwyKSTOO49cujonAPUJN/VaTYzMCO9zaoQsehMZOYWc4uO1ZtK3xh29GNcnV+9cWXo4k1J5wsfu+rKgNkc2ujGjnmuxLEfrPYGLg0OJ0nMHlOmrX90/suWy154DyrqjQfY6d9mFsx3ghB/Rfih9HFQPxOvwj+k0sV3KZbsMa0LrPNRu5JjKZ356xR8ValtR9Z64BamKp2WgEvUissnqc+FegmB9izyCkR43z7JQtNMyUTSbHL2g8N9aUrL5MqKo2fxhM/b2hzqkr2hBGZDRnzRht6PYB7sOcgJypMu24+yOaFgYc+yc/6Li+09ZdS6r5s8ez909Dm4yCa0+7bowaic8ggeKc79Vnh4a6ubTUVoeIVi1AWqFr8UQe37jdhS7qjPSP+69eFsdmYzNAFZ7tD2m6bCiSpK+saLZ2iBrY5S3IJaQdDn9YHKfuuMlgMkXDyNSwyM80Z9v4WQINghmV4aDegwAA, data:image/webp;base64,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 2x"
+              />
+              <h3 class="user-name">Victoria Romashenko</h3>
+              <p class="user-rewiew">
+                I love how fast and fresh the vegetables are delivered. Salads
+                always turn out so appetizing, and soups are real masterpieces.
+                The quality is impeccable!
+              </p>
+            </li>
+            <li class="reviews-list-item">
+              <img
+                width="56"
+                height="56"
+                loading="lazy"
+                src="data:image/webp;base64,UklGRgIEAABXRUJQVlA4WAoAAAAQAAAANwAANwAAQUxQSBEBAAABgFXbjhXpSoiESMHB4AAcgANw0O2AdsA4QAISroRIyAevqmQevxExASgqzbDsdHfntg4Ngkq7mT+0tQsgk3lRLlpHJvPyk1Zo6VXZlZKXV39JEd09ILWA0kNSHyk9KPWB0sNSbwk98C53Xh76daP34O2FMprJ2eTh5xP1+CaHTwKfD8xgAvSe8gtYc2yA5TBpPGkzZhnXLMuWZWcW+r+XWbhn2T5ZvscsY5OlEcthwJbjG2hzdIBYBgLAnGE5iCXQA+Z4M07FolHP0EbrcP2O9cZN2SNR7kAZh4r7yihUPFXGoOK5MsKuKCnvem9B4Z51rEV5nSvYLKiqH5axWVC/X+2Jba0gaDOsGw/cl6ERFAUAVlA4IMoCAAAQDgCdASo4ADgAPoU2lkelIyIhMfce2KAQiUAZRDOpMBjONk8rtgf9VdaEMnZ8tQPoy/tp7AH6gMKwhtNVzGCuZps+R/XuY89Av54dHySW4aBhXCzGKl9sMmYC0etvT/3OCTQn74G08obuTRNg494u24Vfd2382AAAAP7u+j//LQ//5gZ//8rE3r8qdL2xes2H6GNeUmLF7SmsyCcPflYuvgxTKpIYxmU3EZC+b1KAMcKovjKhWKs430NcuvH5/n0SpYtwNYn7ffqMYklCMqp1yAKwGTlmZW8NEex5pm++2mPzbkDWN4HUSjcNFD8jISFRFw4KGG2U1A15iVN6ZNTp387///++0XMFodiWH65DGPkeDOs93I60dzaCScW9bvjTd1yGBoFL4GnZy0/j8/y9l/1OmgcEdVdOnPiXHPAutdA+s+qyVhBKPkoSV7Eo+1TpOpyM6/Co35AJBWUKKnKiIvBKp5UIy74ZcBCwfi+bbRaHEjvulitzDepAXh7gV+C0ywK+l6RxoVyEUTn8VPZYbRMGqNB6Z8Pt/j03HoXrrbFYS5wbkmsr1lEFpfSVqzu8wcSHOJSxN9s60gkma/CHo1E83/Swh+IwpmEWsIGMwb38dsPAe//s5W838+d5fuhTTGxJ5jmTPVuurk3/YazfkMGjyBqRvOd4ggro7jMM4yZg3o/mkg34TKx9lZf8L8vxp+bWTpPgsvotwjEjbv5P1lEZDx/OiSykSyePPKj+KYYmeiZ99pwy9VM3il4mgfGeFlZlXHV6tltzXZlq/92R//V8u2BE1UytF74G/0KO+f/yUV6vW6yUbu1Guygxee4uVVTcDUHkJuJa3nKr7Kf41kB5HCV6L5mDmhiF0psDg67qiwk5tlfMym6xPDe3pgfagEmJZILRpNfQgMVQGuYSEOGAr2r5TpYB+2RLCuaGD5p2JBHlpReAAAA="
+                alt="photo Ihor Trachuk"
+                srcset="data:image/webp;base64,UklGRgIEAABXRUJQVlA4WAoAAAAQAAAANwAANwAAQUxQSBEBAAABgFXbjhXpSoiESMHB4AAcgANw0O2AdsA4QAISroRIyAevqmQevxExASgqzbDsdHfntg4Ngkq7mT+0tQsgk3lRLlpHJvPyk1Zo6VXZlZKXV39JEd09ILWA0kNSHyk9KPWB0sNSbwk98C53Xh76daP34O2FMprJ2eTh5xP1+CaHTwKfD8xgAvSe8gtYc2yA5TBpPGkzZhnXLMuWZWcW+r+XWbhn2T5ZvscsY5OlEcthwJbjG2hzdIBYBgLAnGE5iCXQA+Z4M07FolHP0EbrcP2O9cZN2SNR7kAZh4r7yihUPFXGoOK5MsKuKCnvem9B4Z51rEV5nSvYLKiqH5axWVC/X+2Jba0gaDOsGw/cl6ERFAUAVlA4IMoCAAAQDgCdASo4ADgAPoU2lkelIyIhMfce2KAQiUAZRDOpMBjONk8rtgf9VdaEMnZ8tQPoy/tp7AH6gMKwhtNVzGCuZps+R/XuY89Av54dHySW4aBhXCzGKl9sMmYC0etvT/3OCTQn74G08obuTRNg494u24Vfd2382AAAAP7u+j//LQ//5gZ//8rE3r8qdL2xes2H6GNeUmLF7SmsyCcPflYuvgxTKpIYxmU3EZC+b1KAMcKovjKhWKs430NcuvH5/n0SpYtwNYn7ffqMYklCMqp1yAKwGTlmZW8NEex5pm++2mPzbkDWN4HUSjcNFD8jISFRFw4KGG2U1A15iVN6ZNTp387///++0XMFodiWH65DGPkeDOs93I60dzaCScW9bvjTd1yGBoFL4GnZy0/j8/y9l/1OmgcEdVdOnPiXHPAutdA+s+qyVhBKPkoSV7Eo+1TpOpyM6/Co35AJBWUKKnKiIvBKp5UIy74ZcBCwfi+bbRaHEjvulitzDepAXh7gV+C0ywK+l6RxoVyEUTn8VPZYbRMGqNB6Z8Pt/j03HoXrrbFYS5wbkmsr1lEFpfSVqzu8wcSHOJSxN9s60gkma/CHo1E83/Swh+IwpmEWsIGMwb38dsPAe//s5W838+d5fuhTTGxJ5jmTPVuurk3/YazfkMGjyBqRvOd4ggro7jMM4yZg3o/mkg34TKx9lZf8L8vxp+bWTpPgsvotwjEjbv5P1lEZDx/OiSykSyePPKj+KYYmeiZ99pwy9VM3il4mgfGeFlZlXHV6tltzXZlq/92R//V8u2BE1UytF74G/0KO+f/yUV6vW6yUbu1Guygxee4uVVTcDUHkJuJa3nKr7Kf41kB5HCV6L5mDmhiF0psDg67qiwk5tlfMym6xPDe3pgfagEmJZILRpNfQgMVQGuYSEOGAr2r5TpYB+2RLCuaGD5p2JBHlpReAAAA=, data:image/webp;base64,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 2x"
+              />
+              <h3 class="user-name">Ihor Trachuk</h3>
+              <p class="user-rewiew">
+                Recently tried my fresh tomatoes and peppers - amazing! The
+                authenticity of the taste, as if from the garden directly to my
+                table. It is now my main vegetable supplier.
+              </p>
+            </li>
+          </ul>
+          <div class="slider-bar">
+            <label for="slide1"></label>
+            <label for="slide2"></label>
+            <label for="slide3"></label>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="box">
+  <div class="container box-container">
+    <h2 class="box-title">
+      Fresh <span class="box-highlighted">Harvest</span> Box has got you covered
+    </h2>
+    <p class="box-desc">
+      Our boxes are packed with delicious, nutritious vegetables, perfect for
+      anyone looking to eat healthier or support local farmers. Order your box
+      today and start enjoying the best that nature has to offer!
+    </p>
+    <div class="box-wrapper">
+      <form class="form-wrapper" action="" aria-label="order form" method="get">
+        <h3 class="form-title">
+          Ordering <span class="form-highlighted1">from us</span> is quick and
+          easy! Fill out <span class="form-highlighted2">the form</span> below and
+          we will contact you !
+        </h3>
+        <div class="form-box">
+          <div class="input-wrapper">
+            <input
+              autocomplete="name"
+              required
+              title="John Doe"
+              pattern="^[A-Za-zА-Яа-яЁё\s-]+$"
+              type="text"
+              name="name"
+              placeholder="Full name"
+              aria-label="Full name"
+            />
+            <input
+              autocomplete="email"
+              required
+              title="JohnDoe@gmail.com"
+              type="email"
+              name="email"
+              placeholder="Email"
+              aria-label="email"
+            />
+            <textarea
+              autocomplete="on"
+              rows="3"
+              autocorrect="off"
+              maxlength="200"
+              spellcheck="true"
+              name="comment"
+              id="user-comment"
+              aria-label="user-comment"
+              placeholder="Comment"
+            ></textarea>
+          </div>
+          <button
+            class="order-btn"
+            type="submit"
+            name="send"
+            aria-label="place an order"
+          >
+            send
+          </button>
+        </div>
+      </form>
+      <div class="box-img-wrapper">
+        <picture loading="lazy">
+          <source
+            srcset="/npm-green-harvest/assets/your-order-desk-img-BQ2IiZ2I.webp, /npm-green-harvest/assets/your-order-desk-img@2x-BuForxLy.webp 2x"
+            type="image/webp"
+            media="(min-width: 1280px)"
+          />
+          <source
+            srcset="/npm-green-harvest/assets/your-order-tab-img-Bkdt5FVf.webp, /npm-green-harvest/assets/your-order-tab-img@2x-dQlPsxsW.webp 2x"
+            type="image/webp"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="/npm-green-harvest/assets/your-order-mob-img-nV2944Ug.webp, /npm-green-harvest/assets/your-order-mob-img@2x-BeH-_ZfR.webp 2x"
+            type="image/webp"
+            media="(max-width: 767px)"
+          />
+          <img
+            loading="lazy"
+            class="box-img"
+            alt="A woman is preparing fresh juice."
+            src="/npm-green-harvest/assets/your-order-mob-img-nV2944Ug.webp"
+          />
+        </picture>
+        <div class="socials-wrapper">
+          <p class="social-desc">Follow us on our social networks:</p>
+          <div class="socials">
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+              aria-label="Instagram link"
+              >instagram</a
+            >
+            <span>/</span>
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+              aria-label="Facebook link"
+              >facebook</a
+            >
+            <span>/</span>
+            <a
+              href="https://www.youtube.com"
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+              aria-label="Youtube link"
+              >youtube</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
     </main>
 
-    
+    <footer>
+  <div class="container footer-container">
+    <div class="footer-logo-wrapper">
+      <a
+        class="footer-logo"
+        href="./index.html"
+        aria-label="logo, link to home page"
+      >
+        <div class="logo-svg-container">
+          <svg class="logo-svg">
+            <use href="/npm-green-harvest/assets/icons-kelKj2ht.svg#icon-logo"></use>
+          </svg>
+          <svg class="logo-name">
+            <use href="/npm-green-harvest/assets/icons-kelKj2ht.svg#icon-name"></use>
+          </svg>
+        </div>
+      </a>
+      <p class="footer-desc">
+        Whether you're looking for a healthy snack or a thoughtful gift, our
+        fruit baskets are the perfect choice.
+      </p>
+    </div>
+    <div class="footer-menu-wrapper">
+      <nav class="footer-menu">
+        <ul>
+          <li><a class="footer-menu-link" href="#hero">How It Works</a></li>
+          <li><a class="footer-menu-link" href="#vegetables">Vegetables</a></li>
+          <li><a class="footer-menu-link" href="#rewiews">Reviews</a></li>
+        </ul>
+      </nav>
+      <adress>
+        <ul class="footer-address-list">
+          <li><a href="tel:+380684439426">+380 (68) 443-94-26</a></li>
+          <li>1678 S. Pioneer Road Salt Lake City UT 84104</li>
+        </ul>
+      </adress>
+    </div>
+    <div class="footer-social-wrapper">
+      <div class="footer-policy-wrapper">
+        <a href="/">Privacy Policy</a>
+        <span>/</span>
+        <a href="">Cookie settings</a>
+      </div>
+      <p class="footer-copyright">©Green Harvest 2023</p>
+    </div>
+  </div>
+</footer>
+
 
   </body>
 </html>
