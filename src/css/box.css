@@ -69,7 +69,7 @@
 .input-wrapper textarea {
   border: 1px solid #858585;
   border-radius: 15px;
-  padding: 15px 16px;
+  padding: 16px;
   font-size: 14px;
   line-height: 1.43;
   resize: none;
@@ -142,6 +142,7 @@
 @media screen and (min-width: 768px) {
   .box-container {
     padding: 0 64px;
+    max-width: 640px;
   }
   .box-title {
     font-size: 64px;
@@ -176,7 +177,7 @@
     padding: 16px 15px;
   }
   .input-wrapper textarea {
-    padding: 16px 15px;
+    padding: 17px 15px;
     font-size: 16px;
     line-height: 1.25;
   }
@@ -203,6 +204,7 @@
   .box-container {
     align-items: start;
     padding: 0 100px;
+    max-width: 1080px;
   }
   .box-title {
     max-width: 751px;
@@ -217,6 +219,10 @@
   .form-wrapper {
     flex-basis: calc(50% - 16px);
     padding: 52px 48px;
+  }
+  .form-title{
+    font-size: 29px;
+    margin-bottom: 64px;
   }
   .box-img-wrapper {
     flex-basis: calc(50% - 16px);
