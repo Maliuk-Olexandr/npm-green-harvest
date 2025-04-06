@@ -1,113 +1,102 @@
 <section class="hero" id="hero">
-        <div class="container hero-wrapper">
-          <div class="hero-title-wrapper">
-            <h1 class="hero-title">organic vegetables to your diet today!</h1>
-            <p class="hero-desc">
-              Our expertly curated vegetable baskets are made with the freshest,
-              highest quality vegetables available. Fresh Harvest Box has got
-              you covered. Fresh, high-quality vegetables in expertly curated
-              vegetable baskets delivered to you.
-            </p>
+  <div class="container hero-wrapper">
+    <div class="hero-title-wrapper">
+      <h1 class="hero-title">organic vegetables to your diet today!</h1>
+      <p class="hero-desc">
+        Our expertly curated vegetable baskets are made with the freshest,
+        highest quality vegetables available. Fresh Harvest Box has got you
+        covered. Fresh, high-quality vegetables in expertly curated vegetable
+        baskets delivered to you.
+      </p>
+    </div>
+    <picture>
+      <source
+        srcset="./img/hero-desk-img.webp, ./img/hero-desk-img@2x.webp 2x"
+        type="image/webp"
+        media="(min-width: 1280px)"
+      />
+      <source
+        srcset="./img/hero-tablet-img.webp, ./img/hero-tablet-img@2x.webp 2x"
+        type="image/webp"
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="./img/hero-mob-img.webp, ./img/hero-mob-img@2x.webp 2x"
+        type="image/webp"
+        media="(max-width: 767px)"
+      />
+      <img alt="Fresh vegetables in a basket" src="./img/hero-mob-img.webp" />
+    </picture>
+    <div class="how-it-works-wrapper">
+      <picture loading="lazy">
+        <source
+          srcset="
+            ./img/how-it-works-desk-img.webp,
+            ./img/how-it-works-desk-img@2x.webp 2x
+          "
+          type="image/webp"
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="
+            ./img/how-it-works-tab-img.webp,
+            ./img/how-it-works-tab-img@2x.webp 2x
+          "
+          type="image/webp"
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ./img/how-it-works-mob-img.webp,
+            ./img/how-it-works-mob-img@2x.webp 2x
+          "
+          type="image/webp"
+          media="(max-width: 767px)"
+        />
+        <img
+          loading="lazy"
+          class="how-it-works-img"
+          alt="woman cutting fruit"
+          src="./img/how-it-works-mob-img.webp"
+        />
+      </picture>
+    </div>
+    <div class="how-it-works-desc">
+      <h2 class="how-it-works-title">
+        To order your
+        <span class="how-it-highlighted">vegetable</span>
+        basket, simply follow these
+        <span class="how-it-highlighted">easy steps</span>
+      </h2>
+      <p class="how-it-works-text">
+        Our baskets are assembled with care and delivered straight to your
+        doorstep, so you can enjoy the taste of fresh fruit without ever leaving
+        your home.
+      </p>
+      <ol class="how-it-works-list">
+        <li class="how-it-works-list-item">
+          <div>
+            Just choose
+            <span class="how-item-highlighted">the vegetable</span> you want to
+            order by clicking on the checkboxes
+            <span class="how-item-highlighted">next to it</span>.
           </div>
-          <picture>
-            <source
-              srcset="./img/hero-desk-img.webp, ./img/hero-desk-img@2x.webp 2x"
-              type="image/webp"
-              media="(min-width: 1280px)"
-            />
-            <source
-              srcset="
-                ./img/hero-tablet-img.webp,
-                ./img/hero-tablet-img@2x.webp 2x
-              "
-              type="image/webp"
-              media="(min-width: 768px)"
-            />
-            <source
-              srcset="./img/hero-mob-img.webp, ./img/hero-mob-img@2x.webp 2x"
-              type="image/webp"
-              media="(max-width: 767px)"
-            />
-            <img
-              alt="Fresh vegetables in a basket"
-              src="./img/hero-mob-img.webp"
-            />
-          </picture>
-          <div class="how-it-works-wrapper">
-            <picture loading="lazy">
-              <source
-                srcset="
-                  ./img/how-it-works-desk-img.webp,
-                  ./img/how-it-works-desk-img@2x.webp 2x
-                "
-                type="image/webp"
-                media="(min-width: 1280px)"
-              />
-              <source
-                srcset="
-                  ./img/how-it-works-tab-img.webp,
-                  ./img/how-it-works-tab-img@2x.webp 2x
-                "
-                type="image/webp"
-                media="(min-width: 768px)"
-              />
-              <source
-                srcset="
-                  ./img/how-it-works-mob-img.webp,
-                  ./img/how-it-works-mob-img@2x.webp 2x
-                "
-                type="image/webp"
-                media="(max-width: 767px)"
-              />
-              <img
-                loading="lazy"
-                class="how-it-works-img"
-                alt="woman cutting fruit"
-                src="./img/how-it-works-mob-img.webp"
-              />
-            </picture>
+        </li>
+        <li class="how-it-works-list-item">
+          <div>
+            Click on
+            <span class="how-item-highlighted">the basket</span> and fill out
+            the form.
           </div>
-          <div class="how-it-works-desc">
-            <h2 class="how-it-works-title">
-              To order your
-              <a
-                href="#vegetables"
-                class="how-it-highlighted"
-                aria-label="choose your vegetable"
-                >vegetable</a
-              >
-              basket, simply follow these
-              <span class="how-it-highlighted">easy steps</span>
-            </h2>
-            <p class="how-it-works-text">
-              Our baskets are assembled with care and delivered straight to your
-              doorstep, so you can enjoy the taste of fresh fruit without ever
-              leaving your home.
-            </p>
-            <ol class="how-it-works-list">
-              <li class="how-it-works-list-item">
-                <div>
-                  Just choose
-                  <span class="how-item-highlighted">the vegetable</span> you
-                  want to order by clicking on the checkboxes
-                  <span class="how-item-highlighted">next to it</span>.
-                </div>
-              </li>
-              <li class="how-it-works-list-item">
-                <div>
-                  Click on
-                  <span class="how-item-highlighted">the basket</span> and fill
-                  out the form.
-                </div>
-              </li>
-              <li class="how-it-works-list-item">
-                <div>
-                  Sit back and relax! Your
-                  <span class="how-item-highlighted">fresh vegetables</span>
-                  basket will be delivered.
-                </div>
-              </li>
-            </ol>
+        </li>
+        <li class="how-it-works-list-item">
+          <div>
+            Sit back and relax! Your
+            <span class="how-item-highlighted">fresh vegetables</span>
+            basket will be delivered.
           </div>
-        </div>
-      </section>
+        </li>
+      </ol>
+    </div>
+  </div>
+</section>

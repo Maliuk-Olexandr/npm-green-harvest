@@ -47,11 +47,6 @@ padding: 100px 20px 40px;}
 .how-it-highlighted {
   color: #d4bfc4;
 }
-.how-it-works-title a:hover,
-.how-it-works-title a:focus {
-  color: #7d4b56;
-  text-decoration: underline;
-}
 .how-it-works-text {
   color: #fbfbfb;
   font-size: 14px;
