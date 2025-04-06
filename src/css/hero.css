@@ -9,7 +9,8 @@
   padding: 0;
 }
 .hero-title-wrapper {
-padding: 100px 20px 40px;}
+  padding: 100px 20px 40px;
+}
 .hero-title {
   color: #fbfbfb;
   font-size: 52px;
@@ -69,7 +70,8 @@ padding: 100px 20px 40px;}
   font-size: 14px;
   line-height: 1.43;
   min-height: 84px;
-  padding: 12px 27px 12px 100px;
+  padding-left: 100px;
+  padding-right: 27px;
   position: relative;
 }
 .how-item-highlighted {
@@ -90,8 +92,8 @@ padding: 100px 20px 40px;}
   left: 24px;
   letter-spacing: -0.01em;
   line-height: 1.11;
-  min-height: 52px;
-  min-width: 52px;
+  min-height: 42px;
+  min-width: 42px;
   position: absolute;
   text-transform: uppercase;
   top: 16px;
@@ -110,10 +112,9 @@ padding: 100px 20px 40px;}
   }
   .how-it-works-wrapper {
     padding: 100px 64px;
-    max-width: 768px;
   }
   .how-it-works-title {
-    font-size: 32px;
+    font-size: 30px;
     margin-bottom: 24px;
   }
   .how-it-works-text {
@@ -129,34 +130,36 @@ padding: 100px 20px 40px;}
     padding: 100px 0;
   }
   .how-it-works-list-item {
-    padding: 18px 12px 18px 100px;
+    padding-right: 15px;
     font-size: 16px;
     line-height: 1.25;
     min-height: 76px;
   }
+  .how-it-works-list-item::before {
+    top: 12px;
+  }
 }
 @media screen and (min-width: 1280px) {
-  .hero-wrapper{
-    flex-direction: row;
-    flex-wrap: wrap;
+  .hero-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
-  .hero-title-wrapper,
-  .hero-wrapper picture,
-  .how-it-works-wrapper,
-  .how-it-works-desc{
-    flex-basis: 50%;
-    min-width: 50%;
-  }
-  .hero-title{
+  .hero-title {
     margin-bottom: 128px;
   }
-  .hero-desc{
+  .hero-desc {
     max-width: 470px;
   }
-  .hero-title-wrapper{
-    padding: 232px 36px 0 100px;
+  .hero-title-wrapper {
+    padding: 232px 36px 52px 100px;
   }
-   .how-it-works-desc{
+  .how-it-works-desc {
     padding: 100px;
-   }
+  }
+   .how-it-works-text {
+    margin-bottom: 104px;
+  }
+  .how-it-works-wrapper {
+    padding: 100px;
+  }
 }

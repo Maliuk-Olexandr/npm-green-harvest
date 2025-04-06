@@ -18,11 +18,10 @@
 }
 .vegetable-list {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 20px;
 }
 .vegetable-list-item {
-  flex-basis: 100%;
   background-color: #fbfbfb;
   border-radius: 40px;
   display: flex;
@@ -54,10 +53,10 @@
     max-width: 626px;
   }
   .vegetable-list {
-    gap: 28px;
-  }
-  .vegetable-list-item {
-    flex-basis: calc(50% - 14px);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    row-gap: 28px;
   }
   .product-title {
     font-size: 32px;
@@ -68,8 +67,9 @@
   }
 }
 @media screen and (min-width: 1280px) {
-  .vegetable-list{gap: 24px;}
-  .vegetable-list-item{
-    flex-basis: calc((100% - 48px) / 3);
+  .vegetable-list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
   }
+ 
 }
